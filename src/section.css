@@ -1,0 +1,82 @@
+/* General Styles */
+* {
+    box-sizing: border-box;
+}
+
+/* Section Header */
+.section-header {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* Paragraph */
+.p {
+    margin-top: 3%;
+}
+
+/* Outer Wrapper to Hide Scrollbar */
+.scroll-wrapper {
+    overflow: hidden;
+    width: 100%;
+}
+
+/* Inner Content for Scrolling */
+.section-content, .asection-content {
+    display: flex;
+    overflow-x: scroll;
+    gap: 2vh;
+    width: 100%;
+    padding-bottom: 1px; /* Adding padding to push scrollbar out of view */
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+.section-content::-webkit-scrollbar, .asection-content::-webkit-scrollbar{
+    display: none;
+}
+
+/* Flex Item */
+.item {
+    flex: 0 0 auto; /* Flex item so it doesn't shrink */
+    height: 40vh;
+    width: 20%;
+}
+
+.item:hover {
+    opacity: 50%;
+}
+
+/* Image */
+.image {
+    background-color: green;
+    height: 60%;
+    width: 100%;
+}
+
+/* Images within section content */
+.section-content img, .asection-content img {
+    height: 100%;
+    width: 100%;
+}
+
+/* Media Queries */
+@media (max-width: 1200px) {
+    .item {
+        width: 30%;
+    }
+}
+
+@media (max-width: 768px) {
+    .item {
+        width: 30%;
+    }
+}
+.Heart {
+    color: rgb(178, 178, 178);
+    padding-left: 90%;
+    cursor: pointer;
+  }
+  
+  .item .Heart.liked {
+    color: red; /* Change this to the color you want for liked items */
+  }
+  
