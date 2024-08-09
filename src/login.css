@@ -1,0 +1,75 @@
+html, body {
+    height: 100%;
+    width: 100%;
+    background-color: rgb(78, 78, 78);
+    margin: 0;
+}
+
+.main777 {
+    position: absolute;
+    height: 95%;
+    width: 40%;
+    left: 30%;
+    margin: 1vw;
+    border-radius: 3vh;
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login-content777 {
+    width: 80%;
+    text-align: center;
+}
+
+button {
+    margin-top: 3vh;
+    height: 6vh;
+    width: 20vw;
+    border-radius: 5vh;
+}
+
+#email-or-username777, #password777 {
+    margin-top: 3vh;
+    height: 6vh;
+    width: 20vw;
+}
+
+.login-form777 {
+    margin-top: 10vh;
+    padding-left: 3vh;
+}
+
+.login-button777 {
+    margin-top: 1vh;
+}
+
+.login-submit777 {
+    background-color: green;
+    color: white;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .main777 {
+        width: 80%;
+        left: 10%;
+    }
+
+    button, #email-or-username777, #password777 {
+        width: 70%;
+    }
+}
+
+@media (max-width: 480px) {
+    .main777 {
+        width: 90%;
+        left: 5%;
+    }
+
+    button, #email-or-username777, #password777 {
+        width: 90%;
+    }
+}
